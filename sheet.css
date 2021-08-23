@@ -1,0 +1,308 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*---FIN DEL RESET---*/
+
+/*---INICIO DEL MENU---*/
+
+.Menu {
+    position: relative;
+    display:none;
+    opacity: 0;
+    height: auto;
+    background-color: black;
+    transition: 0.50s;
+}
+
+.Contactate {
+    display:block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'Segoe UI', 'Open Sans';
+    color: white;
+    border-bottom: 0.4vh solid greenyellow;
+    text-decoration: none;
+    transition: 0.50s;
+}
+
+/*---FIN DEL MENU---*/
+
+/*---INICIO DEL NAV---*/
+
+.NavTitulos {
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    border-bottom: 0.5vh solid greenyellow;
+}
+
+.TextoImportante {
+    position: absolute;
+    display: inline-flex;
+    margin-top: 2.5vh;
+    font-size: 4vh;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: white;
+    user-select: none;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+#tituloPagina {
+    position: absolute;
+    left: 2vw;
+}
+
+#iconoMenu {
+    display: none;
+    position: absolute;
+    right: 5vw;
+}
+
+#a_PrimerShipeo {
+    position: absolute;
+    right: 240px;
+}
+
+#a_SegundoShipeo {
+    position: absolute;
+    right: 50px;
+}
+
+#tituloPagina:hover{
+    background-size: 100% 2px;
+}
+
+#a_PrimerShipeo:hover {
+    cursor: pointer;
+    background-size: 100% 2px;
+}
+
+#a_SegundoShipeo:hover {
+    cursor: pointer;
+    background-size: 100% 2px;
+}
+
+/*---Inicio del OVERLAY---*/
+
+
+.Overlay {
+    position: relative;
+    /*Se modifican los valores de esta manera por los bordes
+    del nav (header) los cuales son de 0.5vh*/
+    height: 89.5vh; 
+    width: 100%; 
+    background-image: url(img/bosque.gif);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Overlay:before {
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,0.600);
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.35s;
+}
+
+.Overlay .BotonOverlay {
+    position: absolute;
+    top: 40vh;
+    left: 30%;
+    right: 30%;
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3vh;
+    color: white;
+    border: 3px solid white;
+    user-select: none;
+    transition: 0.35s;
+}
+
+.Overlay .BotonOverlay:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+/*---FIN DEL NAV Y OVERLAY---*/
+
+/*---INICIO DEL SECTION---*/
+
+.Imagen {   
+    position: relative;
+    display: block;
+    width:75vw;
+    margin-top: 17.5vh;
+    transform: translateX(20%);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.375);
+    transition: 0.50s;
+}
+
+.FigCaption {
+    font-size: 2vh;
+    font-family: "Open Sans";
+    font-weight: lighter;
+    text-align: center;
+    opacity: 90%;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.MailsFig {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    border-radius: 9px;
+}
+
+#img_primerShipeo, #img_segundoShipeo {
+    height:55vh;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#img_primerShipeo {
+    width:auto;
+}
+
+#img_segundoShipeo {
+    width:70vw;
+}
+
+/*---FIN DEL SECTION---*/
+
+/*---INICIO DEL FOOTER---*/
+
+.Footer {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    text-align: center;
+    background-color: greenyellow;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.375);
+    user-select: none;
+    transition: 0.35s;
+}
+
+.Blockquote {
+    padding: 15px;
+    font-family: 'Segoe UI', 'Open Sans';
+    transition: 0.35s;
+}
+
+.Footer:hover {
+    background-color: black;
+    transform: scale(1.2);
+}
+
+.Blockquote:hover {
+    color: greenyellow;
+}
+
+/*---INICIO DE ANIMACIONES---*/
+
+.Imagen {
+    opacity: 0;
+    transition: all 1.8s;
+}
+
+.mostrarArriba {
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba{
+    0% 
+    {
+        transform: translateX(-20%);
+    }
+
+    100%{
+        transform: translateX(40); /*Se suman otros 20 por la posicion de ".Imagen"*/
+    }
+}
+/*---FIN DE ANIMACIONES---*/
+
+/*---FIN DE LA PAGINA---*/
+
+
+/*---INICIO DE RESPONSIVE---*/
+
+@media screen and (max-device-width: 600px) {
+    
+    #iconoMenu {
+        display: flex;
+    }
+    
+    #a_PrimerShipeo, #a_SegundoShipeo {
+        display:none;
+    }
+
+    
+}
+
+/*---FIN DE RESPONSIVE---*/
+
+/*Notas:
+1.Agregar fondo de yarichin al bg del overlay
+*/
