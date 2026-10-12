@@ -1,12 +1,365 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Quintana Emmanuel</title>
-  </head>
-  <body>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f4f0" />
+  <meta name="description"
+    content="Desarrollo sitios web y sistemas de gestión para emprendimientos. Portfolio de Emmanuel Quintana, desarrollador de software en Santiago del Estero, Argentina." />
+  <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+  <link rel="stylesheet" type="text/css" href="src/styles/header.css">
+  <link rel="stylesheet" type="text/css" href="src/styles/about-contact.css">
+  <link rel="stylesheet" type="text/css" href="src/styles/hero.css">
+  <link rel="stylesheet" type="text/css" href="src/styles/projects.css">
+  <link rel="stylesheet" type="text/css" href="src/styles/services-process.css">
+  <link rel="stylesheet" type="text/css" href="src/styles/responsive.css">
+  <title>Emmanuel Quintana | Desarrollador de software</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="site-header__logo" href="#inicio" aria-label="Emmanuel Quintana, inicio">
+      EQ
+      <span> . </span>
+    </a>
+    <nav class="site-header__nav" id="site-navigation" aria-label="Navegación principal">
+      <a class="site-header__nav-link" href="#proyectos"> Proyectos </a>
+      <a class="site-header__nav-link" href="#servicios"> Servicios </a>
+      <a class="site-header__nav-link" href="#sobre-mi"> Sobre mí </a>
+      <a class="site-header__nav-link" href="#contacto"> Contacto </a>
+    </nav>
+    <a class="site-header__cta"
+      href="https://wa.me/5493854877069?text=Hola%2C%20vi%20tu%20portfolio%20y%20quisiera%20consultar%20por%20una%20p%C3%A1gina%20web."
+      target="_blank" rel="noreferrer">
+      Consultar
+      <span class="site-header__cta-icon"> ↗ </span>
+    </a>
+    <button class="site-header__menu-toggle" type="button" aria-label="Abrir menú" aria-controls="site-navigation"
+      aria-expanded="false">☰</button>
+  </header>
+  <main>
+    <section class="hero layout-container" id="inicio">
+      <div class="hero__copy">
+        <p class="eyebrow"> <i></i>DESARROLLO WEB · ARGENTINA </p>
+        <h1 class="hero__title"> Tu emprendimiento merece una buena presencia <em class="hero__title-accent">en
+            Internet.</em>
+        </h1>
+        <p class="hero__description"> Diseño y desarrollo sitios web para presentar tus servicios, mostrar lo que hacés
+          y facilitar que tus clientes se pongan en contacto con vos. </p>
+        <div class="hero__actions">
+          <a class="button button--primary"
+            href="https://wa.me/5493854877069?text=Hola%2C%20vi%20tu%20portfolio%20y%20quisiera%20consultar%20por%20una%20p%C3%A1gina%20web."
+            target="_blank" rel="noreferrer">
+            Hablemos de tu proyecto
+            <span> ↗ </span>
+          </a>
+          <a class="text-link" href="#proyectos">
+            Ver trabajos
+            <span> ↓ </span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="services layout-container" id="servicios">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow section-heading__eyebrow">¿CÓMO PUEDO AYUDARTE?</p>
+          <h2 class="section-heading__title"> Soluciones para <br> <em>dar el siguiente paso.</em> </h2>
+        </div>
+        <p class="section-heading__aside"> Una web clara y bien resuelta <br> puede hacer la diferencia. </p>
+      </div>
+      <div class="services__grid">
+        <article class="service-card">
+          <div class="service-card__number">
+            01
+            <span> ↗ </span>
+          </div>
+          <h3 class="service-card__title"> Tu emprendimiento, online. </h3>
+          <p class="service-card__description"> Una página profesional para contar qué ofrecés, mostrar tu trabajo y
+            recibir consultas sin vueltas. </p>
+          <ul class="service-card__list">
+            <li class="service-card__list-item"> Diseño adaptable a celulares </li>
+            <li class="service-card__list-item"> Servicios y contacto en un solo lugar </li>
+            <li class="service-card__list-item"> Formulario de consultas </li>
+            <li class="service-card__list-item"> Mantenimiento incluido por 1 año </li>
+          </ul>
+          <a class="service-card__link text-link"
+            href="https://wa.me/5493854877069?text=Hola%2C%20vi%20tu%20portfolio%20y%20quisiera%20consultar%20por%20una%20p%C3%A1gina%20web."
+            target="_blank" rel="noreferrer">
+            Consultar por una web
+            <span> ↗ </span>
+          </a>
+        </article>
+        <article class="service-card">
+          <div class="service-card__number">
+            02
+            <span> ↗ </span>
+          </div>
+          <h3 class="service-card__title"> Un sistema a tu medida. </h3>
+          <p class="service-card__description"> Software pensado para resolver tareas concretas y ordenar procesos que
+            hoy te quitan tiempo. </p>
+          <ul class="service-card__list">
+            <li class="service-card__list-item"> Entender el proceso y sus necesidades </li>
+            <li class="service-card__list-item"> Herramientas simples de usar </li>
+            <li class="service-card__list-item"> Datos organizados y accesibles </li>
+            <li class="service-card__list-item"> Alcance definido en una propuesta </li>
+          </ul>
+          <a class="service-card__link text-link"
+            href="https://wa.me/5493854877069?text=Hola%2C%20vi%20tu%20portfolio%20y%20quisiera%20consultar%20por%20una%20p%C3%A1gina%20web."
+            target="_blank" rel="noreferrer">
+            Contame qué necesitás
+            <span> ↗ </span>
+          </a>
+        </article>
+      </div>
+    </section>
+    <section class="process layout-container" id="proceso">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow section-heading__eyebrow"> UN CAMINO CLARO, DE PRINCIPIO A FIN </p>
+          <h2 class="section-heading__title"> Así trabajamos <em>juntos.</em> </h2>
+        </div>
+        <p class="section-heading__aside"> Sabés qué esperar en cada etapa, <br> antes de empezar. </p>
+      </div>
+      <div class="process__steps">
+        <article class="process-step">
+          <span class="process-step__number"> 01 </span>
+          <h3 class="process-step__title"> Consulta </h3>
+          <p class="process-step__description"> Me contás qué necesitás, cómo trabajás y qué te gustaría mejorar. </p>
+        </article>
+        <article class="process-step">
+          <span class="process-step__number"> 02 </span>
+          <h3 class="process-step__title"> Propuesta </h3>
+          <p class="process-step__description"> Definimos alcance, precio, tiempos y condiciones. </p>
+        </article>
+        <article class="process-step">
+          <span class="process-step__number"> 03 </span>
+          <h3 class="process-step__title"> Desarrollo </h3>
+          <p class="process-step__description"> Construyo la solución y comparto avances según lo acordado. </p>
+        </article>
+        <article class="process-step">
+          <span class="process-step__number"> 04 </span>
+          <h3 class="process-step__title"> Entrega </h3>
+          <p class="process-step__description"> Publicamos o entrego el proyecto, con lo necesario para seguir usándolo.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section class="about layout-container" id="sobre-mi">
+      <div class="about__heading">
+        <p class="eyebrow about__eyebrow"> UN POCO SOBRE MÍ </p>
+        <h2 class="about__title"> Software útil, <br> hecho con <em class="about__title-accent">intención.</em> </h2>
+        <div class="about__monogram">
+          EQ
+          <span> . </span>
+        </div>
+      </div>
+      <div class="about__content">
+        <p class="about__lead"> Soy desarrollador de software, graduado como Técnico Programador Universitario en
+          Informática por la Universidad Nacional de Santiago del Estero. </p>
+        <p class="about__description"> Me interesa construir soluciones digitales útiles, con especial atención a la
+          claridad de la interfaz, la organización del código y el mantenimiento del software. </p>
+        <div class="tech-stack">
+          <span class="tech-stack__label"> HERRAMIENTAS </span>
+          <div class="tech-stack__items">
+            <b class="tech-stack__item">React</b>
+            <b class="tech-stack__item">TypeScript</b>
+            <b class="tech-stack__item">Node.js</b>
+            <b class="tech-stack__item">C#</b>
+            <b class="tech-stack__item">SQLite</b>
+            <b class="tech-stack__item">MySQL</b>
+            <b class="tech-stack__item">Firebase</b>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact layout-container" id="contacto">
+      <div class="contact__intro">
+        <p class="eyebrow"> ¿TENÉS ALGO EN MENTE? </p>
+        <h2 class="contact__title"> Hagámoslo <em class="contact__title-accent">realidad.</em> </h2>
+        <p class="contact__description"> Contame qué necesitás y te respondo para que podamos definir el mejor próximo
+          paso. </p>
+        <a class="button button--primary"
+          href="https://wa.me/5493854877069?text=Hola%2C%20vi%20tu%20portfolio%20y%20quisiera%20consultar%20por%20una%20p%C3%A1gina%20web."
+          target="_blank" rel="noreferrer">
+          Escribime por WhatsApp
+          <span> ↗ </span>
+        </a>
+      </div>
+      <form class="project-form" id="project-form">
+        <div class="project-form__heading">
+          <span> O CONTAME SOBRE TU PROYECTO </span>
+          <span> RESPONDO A LA BREVEDAD </span>
+        </div>
+        <div class="project-form__field">
+          <label class="project-form__label" for="name"> Tu nombre </label>
+          <input class="project-form__control" id="name" name="name" autocomplete="name" placeholder="¿Cómo te llamás?"
+            required>
+        </div>
+        <div class="project-form__field">
+          <label class="project-form__label" for="email"> E-mail </label>
+          <input class="project-form__control" id="email" name="email" type="email" autocomplete="email"
+            placeholder="tu@email.com" required>
+        </div>
+        <div class="project-form__field">
+          <label class="project-form__label" for="proposal"> Tu propuesta </label>
+          <textarea class="project-form__control" id="proposal" name="proposal" rows="5"
+            placeholder="Contame brevemente qué necesitás" required>  </textarea>
+        </div>
+        <div class="project-form__field">
+          <div class="project-form__actions">
+            <button class="project-form__submit button button--primary" type="submit">
+              Preparar consulta
+              <span> ↗ </span>
+            </button>
+          </div>
+          <p class="project-form__note" id="form-note"> Al enviar, se abrirá tu aplicación de correo para que puedas
+            revisar y enviar el mensaje. </p>
+        </div>
+      </form>
+    </section>
+    <section class="projects layout-container" id="proyectos">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow section-heading__eyebrow">¿HACE FALTA UN VOTO DE CONFIANZA?</p>
+          <h2 class="section-heading__title"> Proyectos <em>destacados</em> creados por mi.</h2>
+        </div>
+      </div>
+      <article class="project-card">
+        <div class="project-card__art project-card__art--parking">
+          <img class="project-card__image" src="/src/assets/GEU.webp"
+            alt="Vista previa no disponible para el sistema de gestión de estacionamiento" />
+        </div>
+        <div class="project-card__content">
+          <p class="eyebrow section-heading__eyebrow"> 01 — SISTEMA DE GESTIÓN </p>
+          <h3 class="project-card__title"><a href="https://apps.microsoft.com/detail/9pmchg85x6jz" target="_blank">
+              Gestor de estacionamiento urbano <span>↗</span></b>
+            </a>
+          </h3>
+          <p class="project-card__description"> Una herramienta para ordenar el día a día de un estacionamiento:
+            registrar ingresos, seguir ocupación y consultar movimientos desde un solo lugar. </p>
+
+          <button class="text-link project-card__link" type="button" data-dialog="project-parking">
+            Conocer más detalles
+            <span> ↗ </span>
+          </button>
+        </div>
+      </article>
+      <article class="project-card project-card--reverse">
+        <div class="project-card__art project-card__art--landing">
+          <img class="project-card__image" src="/src/assets/Chancita.svg"
+            alt="Vista previa no disponible para el sitio web." />
+        </div>
+        <div class="project-card__content">
+          <p class="eyebrow section-heading__eyebrow"> 02 — SITIO WEB EN DESARROLLO </p>
+          <h3 class="project-card__title"> Chancita </h3>
+          <p class="project-card__description">
+            Una propuesta digital para la gestión, compra y venta de rifas digitales.
+          </p>
+          <button class="text-link project-card__link" type="button" data-dialog="project-casa-norte">
+            Conocer más detalles
+            <span> ↗ </span>
+          </button>
+        </div>
+      </article>
+      <dialog class="project-dialog" id="project-parking" aria-labelledby="project-parking-title">
+        <button class="project-dialog__close" type="button" aria-label="Cerrar diálogo">×</button>
+        <p class="eyebrow">GESTOR DE ESTACIONAMIENTO URBANO</p>
+        <h2 class="project-dialog__title" id="project-parking-title">Gestor de estacionamiento urbano</h2>
+        <p>
+          Aplicación de escritorio diseñada para simplificar la operación diaria
+          de estacionamientos y reducir la dependencia de registros manuales propensos al error humano.
+          <br />
+          <br />
+          Actualmente solo está disponible en Windows 10/11 vía <a class="text-link" target="_blank"
+            href="https://apps.microsoft.com/detail/9pmchg85x6jz"><b>Microsoft Store <span>↗</span></b></a> aunque
+          no se descarta la distribución de la aplicación hacia Linux y MacOS. Si necesitas un instalador para estos
+          otros sistemas operativos, <a class="text-link" target="_blank"
+            href="https://wa.me/5493854877069?text=Hola%2C%20vi%20tu%20portfolio%20y%20quisiera%20consultar%20por%20una%20p%C3%A1gina%20web."
+            .>contactame <span>↗</span></a>.
+        </p>
+        <h3>Problemas que resuelve</h3>
+        <ul>
+          <li>Registros manuales que dificultan el seguimiento de los vehículos.</li>
+          <li>Errores al calcular los importes según el tiempo de estadía.</li>
+          <li>Dificultad para consultar movimientos anteriores.</li>
+        </ul>
+        <h3>¿Cómo lo resuelve?</h3>
+        <ul>
+          <li>Registra el ingreso de vehículos mediante su patente y categoría.</li>
+          <li>Calcula los importes automáticamente según tarifas configurables y el tiempo de estadía.</li>
+          <li>Centraliza el estado de los vehículos y el historial de cobros.</li>
+          <li>Almacena los datos localmente mediante SQLite, sin depender de una conexión a Internet.</li>
+        </ul>
+        <h3>Funcionalidades</h3>
+        <ul>
+          <li>Registro del ingreso de vehículos mediante su patente y categoría.</li>
+          <li>Calcula los importes automáticamente según tarifas configurables y el tiempo de estadía.</li>
+          <li>Busqueda por patente de vehículos estacionados.</li>
+          <li>No depende de una conexión a internet</li>
+          <li>Creación, modificacion y borrado de categorías de vehículos.</li>
+          <li>Creación y restauración de copias de seguridad.</li>
+          <li>Reportes e historial: Permite consultar en listado y gráficas información gobernada por un sistema de
+            filtros. Permite exportar a PDF la información requerida.</li>
+        </ul>
+        <div class="project-dialog__tech">
+          <h3>Tecnologías usadas</h3>
+          <div class="project-dialog__tags">
+            <span class="project-card__tag">.NET C#</span>
+            <span class="project-card__tag">Avalonia UI</span>
+            <span class="project-card__tag">SQLite</span>
+          </div>
+        </div>
+      </dialog>
+      <dialog class="project-dialog" id="project-casa-norte" aria-labelledby="project-casa-norte-title">
+        <button class="project-dialog__close" type="button" aria-label="Cerrar diálogo">×</button>
+        <p class="eyebrow">SITIO WEB</p>
+        <h2 class="project-dialog__title" id="project-casa-norte-title">Chancita</h2>
+        <p>
+          Chancita es una aplicación web que permite a los usuarios comprar rifas, crearlas, gestionarlas y venderlas.
+          Todo dentro de la misma app web.
+          <br />
+          Actualmente, la aplicación se encuentra en últimas fases de desarrollo.
+          <br />
+          <br />
+          <b>Usuarios menores de 18 años no pueden usar esta aplicación.</b>
+        </p>
+        <h3>Funcionalidades</h3>
+        <ul>
+          <li>La autenticación de los usuarios se realiza ya sea completando un formulario o bien usando su cuenta de
+            Google.</li>
+          <li>La creación de rifas se realiza vía un formulario multi-pasos donde se definen atributos como el título y
+            descripción de la rifa, cantidad de números a vender, precio por número, fecha de cierre/sorteo de la rifa,
+            cantidad de premios, titulo y descripción de premios y modo de elección de ganador (aleatorio o en base a
+            algún evento).</li>
+          <li>Un usuario creador de una rifa puede editar algunos datos de la misma bajo ciertas condiciones. Además,
+            puede compartir su rifa vía link, código (editable) y código QR.</li>
+          <li>Un usuario puede unirse a una rifa de diferentes formas, ya sea mediante un link o código, o incluso
+            escaneando un código QR que el usuario creador de la rifa pueda facilitarle.</li>
+        </ul>
+        <div class="project-dialog__tech">
+          <h3>Tecnologías usadas</h3>
+          <div class="project-dialog__tags">
+            <span class="project-card__tag">Next.js</span>
+            <span class="project-card__tag">Firestore</span>
+            <span class="project-card__tag">Cloud functions</span>
+            <span class="project-card__tag">Firebase Authentication</span>
+            <span class="project-card__tag">Mercado Pago - Checkout Pro</span>
+          </div>
+        </div>
+      </dialog>
+    </section>
+  </main>
+  <footer class="site-footer layout-container">
+    <a class="site-footer__logo" href="#inicio">
+      EQ
+      <span class="site-footer__logo-mark"> . </span>
+    </a>
+    <small class="site-footer__copyright"> © 2026 EMMANUEL QUINTANA </small>
+  </footer>
+  <script type="module" src="/src/main.ts">  </script>
+</body>
+
 </html>

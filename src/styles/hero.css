@@ -1,0 +1,259 @@
+/* Hero layout. */
+
+.hero {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 105px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  align-items: center;
+  min-height: 560px;
+}
+
+.hero__title {
+  font-size: clamp(46px,5.4vw,72px);
+  line-height: 1.04;
+  letter-spacing: -.065em;
+  max-width: 630px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.hero__description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #5e5e59;
+  max-width: 465px;
+  margin: 24px 0 27px;
+}
+
+.hero__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+
+.hero__location b {
+  color: var(--blue);
+  padding: 0 5px;
+}
+
+.hero__preview {
+  padding-top: 15px;
+}
+
+.hero-preview__label,.hero-preview__caption {
+  font: 9px var(--mono);
+  letter-spacing: .05em;
+  color: #777770;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-preview__label {
+  margin-bottom: 12px;
+}
+
+.hero-preview__browser {
+  background: white;
+  border: 1px solid #deddd7;
+  box-shadow: 0 18px 48px #26251d12;
+  transform: rotate(1deg);
+}
+
+.hero-preview__browser-bar {
+  height: 34px;
+  border-bottom: 1px solid #eeede9;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 12px;
+}
+
+.hero-preview__dots {
+  display: flex;
+  gap: 4px;
+}
+
+.hero-preview__dots i {
+  width: 6px;
+  height: 6px;
+  background: #d1d0cb;
+  border-radius: 100%;
+}
+
+.hero-preview__address {
+  background: #f5f4f0;
+  color: #9a9993;
+  text-align: center;
+  border-radius: 3px;
+  font: 8px var(--mono);
+  padding: 4px;
+  width: 60%;
+  margin: auto;
+}
+
+.hero-preview__menu {
+  font-size: 8px;
+  color: #aaa;
+}
+
+.hero-preview__site {
+  height: 340px;
+  padding: 0 26px;
+  background: #faf9f5;
+  color: #26342a;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-preview__nav {
+  height: 50px;
+  border-bottom: 1px solid #dfdfd7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 7px;
+  color: #616a60;
+}
+
+.hero-preview__nav strong {
+  font-size: 15px;
+  letter-spacing: -1px;
+  color: #28372b;
+}
+
+.hero-preview__nav b {
+  border: 1px solid #a6afa1;
+  padding: 6px 8px;
+  font-size: 7px;
+  font-weight: 500;
+}
+
+.hero-preview__content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-preview__content small,.landing-preview__content small {
+  font: 7px var(--mono);
+  letter-spacing: .1em;
+  color: #75806f;
+}
+
+.hero-preview__content h2 {
+  font-size: 33px;
+  line-height: .98;
+  letter-spacing: -1.6px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.hero-preview__content h2 i {
+  font-family: Georgia,serif;
+  font-weight: 400;
+  color: #778670;
+}
+
+.hero-preview__content p {
+  font: 8px/1.6 Arial;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.hero-preview__content button,.landing-preview__content button {
+  background: #445744;
+  border: 0;
+  color: #fff;
+  padding: 8px 9px;
+  font-size: 7px;
+}
+
+.hero-preview__photo {
+  height: 220px;
+  background: linear-gradient(150deg,#c8c6a8 0 35%,#969e7b 36% 60%,#7d6a54 61%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-preview__photo:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 60%;
+  background: linear-gradient(90deg,#a99370,#ddcda5);
+  clip-path: polygon(10% 0,92% 0,100% 100%,0 100%);
+}
+
+.hero-preview__photo:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 47%;
+  width: 20%;
+  height: 50%;
+  background: #4c4636;
+}
+
+.hero-preview__photo .hero-preview__sun {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #eee0b8;
+  right: 16px;
+  top: 15px;
+}
+
+.hero-preview__photo .hero-preview__arch {
+  position: absolute;
+  z-index: 1;
+  width: 40px;
+  height: 66px;
+  border: 7px solid #655743;
+  border-bottom: 0;
+  bottom: 0;
+  left: 16%;
+  border-radius: 32px 32px 0 0;
+}
+
+.hero-preview__photo .hero-preview__plant {
+  position: absolute;
+  z-index: 2;
+  bottom: 9px;
+  left: 9px;
+  color: #3e533b;
+  font-size: 42px;
+}
+
+.hero-preview__photo>span {
+  position: absolute;
+  z-index: 3;
+  right: 7px;
+  bottom: 6px;
+  color: white;
+  font: 6px var(--mono);
+}
+
+.hero-preview__footer {
+  border-top: 1px solid #dfdfd7;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: 6px var(--mono);
+  color: #7b8276;
+}
+
+.hero-preview__caption {
+  margin-top: 16px;
+  text-transform: uppercase;
+  font-size: 8px;
+}
