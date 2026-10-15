@@ -30,11 +30,11 @@ navigationLinks.forEach((link) => {
 })
 
 const linkForSection: Record<string, string> = {
-  proyectos: '#proyectos',
   servicios: '#servicios',
   proceso: '#servicios',
-  'sobre-mi': '#sobre-mi',
   contacto: '#contacto',
+  'sobre-mi': '#sobre-mi',
+  proyectos: '#proyectos',
 }
 
 let currentSectionId: string | null = null
@@ -63,7 +63,7 @@ const setCurrentSection = (sectionId: string) => {
 // Deben estar en el mismo orden en que aparecen en la página
 const sections = [
   ...document.querySelectorAll<HTMLElement>(
-    '#inicio, #proyectos, #servicios, #proceso, #sobre-mi, #contacto',
+    '#inicio, #servicios, #proceso, #contacto, #sobre-mi, #proyectos',
   ),
 ]
 
