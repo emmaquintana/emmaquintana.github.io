@@ -1,15 +1,15 @@
-# Portfolio de Emmanuel Ezequiel Quintana Bru
+# Freelancing de Emmanuel Ezequiel Quintana Bru
 
-Sitio web personal de Emmanuel Ezequiel Quintana Bru, desarrollador de software en Santiago del Estero, Argentina. El portfolio presenta proyectos realizados, los servicios ofrecidos y una forma de contacto para conversar sobre nuevas propuestas.
+Sitio web dedicado al freelancing de Emmanuel Ezequiel Quintana Bru, desarrollador de software en Santiago del Estero, Argentina. El sitio presenta proyectos realizados, los servicios ofrecidos y una forma de contacto para conversar sobre nuevas propuestas.
 
 ## Contenido de la página web
 
-- **Inicio:** Presentación y acceso a las secciones principales.
-- **Proyectos:** Muestra de un sistema de gestión de estacionamiento y la aplicación web Chancita, con información ampliada de cada proyecto.
+- **Inicio:** Presentación y acceso a las secciones principales. proyecto.
 - **Servicios:** Desarrollo de sitios web y sistemas de gestión.
 - **Proceso de trabajo:** Etapas desde la consulta inicial hasta la entrega.
-- **Sobre mí:** Perfil y enfoque profesional.
 - **Contacto:** Formulario que prepara un mensaje en la aplicación de correo del visitante.
+- **Sobre mí:** Perfil y enfoque profesional.
+- **Proyectos:** Muestra proyectos destacados por parte del desarrollador, ampliando información por cada uno de los proyectos.
 
 ## Estructura del proyecto
 
