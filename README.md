@@ -1,5 +1,3 @@
-# Freelancing de Emmanuel Ezequiel Quintana Bru
-
 Sitio web dedicado al freelancing de Emmanuel Ezequiel Quintana Bru, desarrollador de software en Santiago del Estero, Argentina. El sitio presenta proyectos realizados, los servicios ofrecidos y una forma de contacto para conversar sobre nuevas propuestas.
 
 ## Contenido de la página web
