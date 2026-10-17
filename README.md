@@ -5,7 +5,7 @@ Sitio web dedicado al freelancing de Emmanuel Ezequiel Quintana Bru, desarrollad
 - **Inicio:** Presentación y acceso a las secciones principales. proyecto.
 - **Servicios:** Desarrollo de sitios web y sistemas de gestión.
 - **Proceso de trabajo:** Etapas desde la consulta inicial hasta la entrega.
-- **Contacto:** Formulario que prepara un mensaje en la aplicación de correo del visitante.
+- **Contacto:** Enlace directo a WhatsApp para iniciar una conversación.
 - **Sobre mí:** Perfil y enfoque profesional.
 - **Proyectos:** Muestra proyectos destacados por parte del desarrollador, ampliando información por cada uno de los proyectos.
 

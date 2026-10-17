@@ -128,6 +128,24 @@
   gap: 27px;
 }
 
+.hero__actions > .button--primary {
+    padding: .8rem;
+}
+
+.hero__action-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  line-height: 1.25;
+}
+
+.hero__action-subtitle {
+  font-size: .85rem;
+  font-weight: 500;
+  opacity: .8;
+}
+
 .hero__location b {
   color: var(--blue);
   padding: 0 5px;

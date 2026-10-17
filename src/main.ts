@@ -101,23 +101,6 @@ new ResizeObserver(onScroll).observe(document.body) // por si cambia el alto del
 
 updateCurrentSection()
 
-const projectForm = document.querySelector<HTMLFormElement>('#project-form')!
-projectForm.addEventListener('submit', (event) => {
-  event.preventDefault()
-
-  const formData = new FormData(projectForm)
-  const body = [
-    `Nombre: ${formData.get('name')}`,
-    `E-mail: ${formData.get('email')}`,
-    '',
-    String(formData.get('proposal')),
-  ].join('\n')
-  const subject = encodeURIComponent(`Consulta de proyecto — ${formData.get('name')}`)
-  window.location.href = `mailto:emmaquintana0307@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`
-  document.querySelector('#form-note')!.textContent =
-    'Se abrió tu aplicación de correo con la consulta lista para revisar y enviar.'
-})
-
 document.querySelectorAll<HTMLButtonElement>('[data-dialog]').forEach((trigger) => {
   const dialog = document.getElementById(trigger.dataset.dialog!) as HTMLDialogElement | null
   if (!dialog) return

@@ -52,8 +52,11 @@
           <a class="button button--primary"
             href="https://wa.me/5493854877069?text=Hola%2C%20vi%20tu%20página%20y%20quisiera%20consultar%20por%20una%20p%C3%A1gina%20web."
             target="_blank" rel="noreferrer">
-            Hablemos de tu proyecto
-            <span> ↗ </span>
+            <span class="hero__action-label">
+              <span class="hero__action-title">Hablemos de tu proyecto</span>
+              <span class="hero__action-subtitle">Envía un mensaje</span>
+            </span>
+            <span aria-hidden="true"> ↗ </span>
           </a>
           <a class="text-link" href="#servicios">
             Ver servicios
@@ -181,37 +184,16 @@
           <span> ↗ </span>
         </a>
       </div>
-      <form class="project-form" id="project-form">
-        <div class="project-form__heading">
-          <span> O CONTAME SOBRE TU PROYECTO </span>
-          <span> RESPONDO A LA BREVEDAD </span>
-        </div>
-        <div class="project-form__field">
-          <label class="project-form__label" for="name"> Tu nombre </label>
-          <input class="project-form__control" id="name" name="name" autocomplete="name" placeholder="¿Cómo te llamás?"
-            required>
-        </div>
-        <div class="project-form__field">
-          <label class="project-form__label" for="email"> E-mail </label>
-          <input class="project-form__control" id="email" name="email" type="email" autocomplete="email"
-            placeholder="tu@email.com" required>
-        </div>
-        <div class="project-form__field">
-          <label class="project-form__label" for="proposal"> Tu propuesta </label>
-          <textarea class="project-form__control" id="proposal" name="proposal" rows="5"
-            placeholder="Contame brevemente qué necesitás" required>  </textarea>
-        </div>
-        <div class="project-form__field">
-          <div class="project-form__actions">
-            <button class="project-form__submit button button--primary" type="submit">
-              Preparar consulta
-              <span> ↗ </span>
-            </button>
-          </div>
-          <p class="project-form__note" id="form-note"> Al enviar, se abrirá tu aplicación de correo para que puedas
-            revisar y enviar el mensaje. </p>
-        </div>
-      </form>
+      <aside class="contact__next-steps" aria-label="Próximos pasos">
+        <p class="contact__next-steps-label"> PARA EMPEZAR </p>
+        <h3>¿Qué me podés contar?</h3>
+        <ul>
+          <li>Qué necesitás resolver con tu proyecto.</li>
+          <li>Para cuándo te gustaría tenerlo.</li>
+          <li>Alguna idea o referencia que te inspire.</li>
+        </ul>
+        <p class="contact__next-steps-note">Con eso, coordinamos una charla y definimos juntos el alcance y los próximos pasos.</p>
+      </aside>
     </section>
     <section class="about layout-container" id="sobre-mi">
       <div class="about__heading">
