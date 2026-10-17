@@ -1,4 +1,4 @@
-Sitio web dedicado al freelancing de Emmanuel Ezequiel Quintana Bru, desarrollador de software en Santiago del Estero, Argentina. El sitio presenta proyectos realizados, los servicios ofrecidos y una forma de contacto para conversar sobre nuevas propuestas.
+Sitio web dedicado a la venta del servicio de desarrollo web por parte del desarrollador de este sitio. La página presenta proyectos realizados, los servicios ofrecidos y una forma de contacto para conversar sobre nuevas propuestas.
 
 ## Contenido de la página web
 
@@ -18,6 +18,7 @@ El proyecto presenta ficheros y directorios organizados de la siguiente manera:
 - **src/assets/**: Imágenes y otros recursos del proyecto
 - **src/styles/**: Estilos del proyecto. Usa archivos CSS con metodología BEM aplicada.
 - **package.json**: Configuración y dependencias del proyecto.
+- **demos/**: Páginas de demostración.
 
 ## Tecnologías
 
