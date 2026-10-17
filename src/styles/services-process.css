@@ -46,7 +46,7 @@
 }
 
 .service-card__description {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.7;
   color: #71716b;
   max-width: 410px;
@@ -63,7 +63,7 @@
 .service-card__list-item {
   padding: 9px 0;
   border-bottom: 1px solid #d8d6d0;
-  font-size: 14px;
+  font-size: 1rem;
   color: #565751;
 }
 
