@@ -1,5 +1,18 @@
 /* Project cards and illustrative project interfaces. */
 
+.projects {
+  background: #f8f7f4;
+  max-width: none;
+  padding-left: max(clamp(24px,6.2vw,84px),calc((100% - 1152px)/2));
+  padding-right: max(clamp(24px,6.2vw,84px),calc((100% - 1152px)/2));
+}
+
+.projects > * {
+  max-width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body.has-open-dialog {
   overflow: hidden;
 }

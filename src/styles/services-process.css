@@ -74,7 +74,18 @@
 }
 
 .process {
+  background: #ecebe6;
+  max-width: none;
+  padding-left: max(clamp(24px,6.2vw,84px),calc((100% - 1152px)/2));
+  padding-right: max(clamp(24px,6.2vw,84px),calc((100% - 1152px)/2));
   padding-bottom: 118px;
+}
+
+.process .section-heading,
+.process__steps {
+  max-width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .process__steps {

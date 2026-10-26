@@ -78,12 +78,23 @@
 }
 
 .contact {
+  background: #e2e0d9;
+  max-width: none;
+  padding-left: max(clamp(24px,6.2vw,84px),calc((100% - 1152px)/2));
+  padding-right: max(clamp(24px,6.2vw,84px),calc((100% - 1152px)/2));
   padding-top: 99px;
   padding-bottom: 104px;
   display: grid;
   grid-template-columns: .82fr 1.18fr;
   gap: 100px;
   border-bottom: 1px solid #d8d6d0;
+}
+
+.contact > * {
+  max-width: 1152px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact__title {
